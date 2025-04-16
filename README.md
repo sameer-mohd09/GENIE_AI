@@ -1,16 +1,32 @@
-# allen
+# Allen Flutter Project
 
-A new Flutter project.
+Welcome to the **GENIE_AI Flutter Project**! This project is built using the Flutter framework to deliver a high-performance, cross-platform mobile application with advanced AI capabilities.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Cross-platform support (iOS, Android)
+- Responsive UI
+- Modular architecture
+- Easy to customize
+- **AI Voice Assistant** powered by ChatGPT
+- **Image Generation** using DALL-E
 
-A few resources to get you started if this is your first Flutter project:
+## Project Structure
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```
+lib/
+├── main.dart         # Entry point of the application
+├── screens/          # UI screens
+├── widgets/          # Reusable widgets
+├── models/           # Data models
+├── services/         # Business logic and API services
+└── ai/               # AI-related features (Voice Assistant, Image Generation)
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Requirements
+
+- Flutter SDK: [Install Flutter](https://flutter.dev/docs/get-started/install)
+- Dart: Comes with Flutter SDK
+- IDE: VS Code, Android Studio, or IntelliJ IDEA
+
+Happy coding!
