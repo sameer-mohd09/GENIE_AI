@@ -1,9 +1,11 @@
 import 'package:allen/home_page.dart';
 import 'package:allen/pallete.dart';
 import 'package:flutter/material.dart';
+import 'package:allen/utils/env_utils.dart';
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await EnvUtils.loadEnv();
   runApp(const MyApp());
 }
 

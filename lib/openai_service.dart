@@ -1,17 +1,18 @@
 import "dart:convert";
 
-import "package:allen/secrets.dart";
+import "package:allen/utils/env_utils.dart";
 import "package:http/http.dart" as http;
 
 class OpenAIService {
   final List<Map<String, String>> messages = [];
+  String apiKey = EnvUtils.getApiKey();
   Future<String> isArtPromptAPI(String prompt) async {
     try {
       final res = await http.post(
           Uri.parse("https://api.openai.com/v1/chat/completions"),
           headers: {
             "Content-Type": "application/json",
-            "Authorization": "Bearer $openAIAPIKey",
+            "Authorization": "Bearer $apiKey",
           },
           body: jsonEncode({
             "model": "gpt-4o",
@@ -51,7 +52,7 @@ class OpenAIService {
           Uri.parse("https://api.openai.com/v1/chat/completions"),
           headers: {
             "Content-Type": "application/json",
-            "Authorization": "Bearer $openAIAPIKey",
+            "Authorization": "Bearer $apiKey",
           },
           body: jsonEncode({
             "model": "gpt-4o",
@@ -84,7 +85,7 @@ class OpenAIService {
           Uri.parse("https://api.openai.com/v1/images/generations"),
           headers: {
             "Content-Type": "application/json",
-            "Authorization": "Bearer $openAIAPIKey",
+            "Authorization": "Bearer $apiKey",
           },
           body: jsonEncode({
             "prompt": prompt,
