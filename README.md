@@ -69,9 +69,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - OpenAI for their powerful APIs
 - Flutter team for the amazing framework
 - All contributors and users of GENIE AI
-
-Update: Jan 6 contribution
-
-Update: Jan 7 contribution
-
-Update: Jan 11 contribution
